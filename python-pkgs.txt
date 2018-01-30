@@ -1,0 +1,13 @@
+# Anaconda Mirror in China
+# https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+
+conda install -y numpy pandas scipy matplotlib h5py scikit-learn
+
+# # upgrade
+conda update scikit-learn
+
+# # remove
+conda remove scikit-learn
