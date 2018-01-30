@@ -11,3 +11,9 @@ conda update scikit-learn
 
 # # remove
 conda remove scikit-learn
+
+
+
+# # pip.conf  # # linux ~/.pip/pip.conf  # # windows: C:\Users\xx\pip\pip.ini
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
