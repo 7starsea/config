@@ -1,0 +1,1 @@
+b2.exe --without-context --without-graphparallel --without-wave --without-mpi --without-test install
