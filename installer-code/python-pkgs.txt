@@ -6,6 +6,9 @@ conda config --set show_channel_urls yes
 
 conda install -y numpy pandas scipy matplotlib h5py scikit-learn
 
+# # ipdb: Integration of IPython pdb
+# # scikit-image: 
+
 # # upgrade
 conda update scikit-learn
 

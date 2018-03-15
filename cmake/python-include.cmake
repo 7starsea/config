@@ -1,0 +1,9 @@
+# # python lib
+set(PYTHON_INCLUDE_DIR "Path where python.h locates")
+
+FIND_PACKAGE(PythonInterp)
+FIND_PACKAGE(PythonLibs)
+
+message(STATUS "PYTHON_INCLUDE_DIRS: " ${PYTHON_INCLUDE_DIRS})
+message(STATUS "PYTHON_LIBRARIES: " ${PYTHON_LIBRARIES})
+message(STATUS "PYTHON_LIB_VERSION: " ${PYTHONLIBS_VERSION_STRING})
