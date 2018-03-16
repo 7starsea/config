@@ -1,10 +1,32 @@
+
+下面仅是个人使用Python的心得，与大家共享：
+### 安装篇
+# 建议使用 Anaconda 进行安装，可到官网 https://www.anaconda.com 或 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/ 下载。 Anaconda使得安装其他Python包相当方便。
+# 如果你能在 bash(linux) / cmd (window) 里使用 conda -h 命令，说明安装Anacoda成功。
+
+### 配置镜像篇:
+# 请参考 清华大学开源软件镜像站 (https://mirrors.tuna.tsinghua.edu.cn/anaconda)
+
+### Python IDE篇:
+# Wing IDE : 启动速度比 PyCharm 快多了，也很好支持 代码补全，用于开发。
+# PyCharm：用了很久的 Python IDE，代码补全功能很好，用于开发。
+# Spyder ： 能够友好地呈现 numpy, pandas 数据，一般用于debug。
+
+### 常用Python包篇：
+ 做为一个与数据打交道的人，用以下命令安装自己常用的包
+conda install -y numpy pandas statsmodels scipy matplotlib h5py scikit-learn
+
+
+写在此处也是为了以后换电脑时，能够快速搭建起Python环境，符合自己的一惯风格：Write once, use everywhere.
+
+
 # Anaconda Mirror in China
 # https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
 
-conda install -y numpy pandas scipy matplotlib h5py scikit-learn
+conda install -y numpy pandas statsmodels scipy matplotlib h5py scikit-learn
 
 # # ipdb: Integration of IPython pdb
 # # scikit-image: 
