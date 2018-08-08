@@ -37,7 +37,8 @@ conda update scikit-learn
 # # remove
 conda remove scikit-learn
 
-
+python -m pip install dispy
+pip install psutil
 
 # # pip.conf  # # linux ~/.pip/pip.conf  # # windows: C:\Users\xx\pip\pip.ini
 [global]
