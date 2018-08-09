@@ -1,0 +1,6 @@
+using python
+	: 3.5
+	: /home/share/envs/py35/bin/python 
+	: /home/share/envs/py35/include/python3.5m
+	: /usr/lib/x86_64-linux-gnu/libpython3.5m.so
+	;

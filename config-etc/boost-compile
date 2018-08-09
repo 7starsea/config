@@ -1,1 +1,6 @@
 b2.exe --without-context --without-graph --without-graph_parallel --without-wave --without-mpi --without-test install
+
+
+./b2 --build-type=minimal --build-dir=build  --link=shared --without-context --without-python --without-graph --without-stacktrace --without-graph_parallel --without-wave --without-mpi --without-test --without-fiber --without-coroutine --without-coroutine --without-container stage
+
+./b2 --build-type=minimal --build-dir=build  --link=shared  --with-python stage
