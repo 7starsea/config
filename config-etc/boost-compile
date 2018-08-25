@@ -3,4 +3,14 @@ b2.exe --without-context --without-graph --without-graph_parallel --without-wave
 
 ./b2 --build-type=minimal --build-dir=build  --link=shared --without-context --without-python --without-graph --without-stacktrace --without-graph_parallel --without-wave --without-mpi --without-test --without-fiber --without-coroutine --without-coroutine --without-container stage
 
+
+# for compiling boost-python, we need a "user-config.jam" file with content
+using python
+        : 3.6
+        : /miniconda3/bin/python
+        : /miniconda3/include/python3.6m
+        : /miniconda3/lib/libpython3.6m.so.1.0
+        ;
+
+
 ./b2 --build-type=minimal --build-dir=build  --link=shared  --with-python stage
