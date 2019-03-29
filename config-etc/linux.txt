@@ -1,0 +1,30 @@
+
+sudo apt-get install vim,geany
+sudo apt-get install build-essential gcc g++ git screen tmux
+
+cmake
+
+
+# # How to mount a new drive
+https://www.cnblogs.com/afrag/p/5972511.html
+
+
+
+# # solving warning warning: Please check that your locale settings:   
+locale  # # list what locales currently defined for my account
+sudo locale-gen "en_US.UTF-8"
+
+
+
+# # Install lapack
+# # Install OpenBlas without using CMake (there is a testing problem)
+# # using CMake to install lapack with following commands
+cmake -DCMAKE_INSTALL_PREFIX=/home/share/Public/openblas -DCMAKE_BUILD_TYPE=Release ..
+# cmake -DCMAKE_INSTALL_PREFIX=/home/share/Public/openblas -DCMAKE_BUILD_TYPE=Release ..
+
+cmake -DBLAS_LIBRARIES=/home/share/Public/OpenBlas/lib/libopenblas.so -DCMAKE_INSTALL_PREFIX=/home/share/Public/lapack -DCMAKE_BUILD_TYPE=Release -ULAPACKE -DLAPACKE=ON ..
+
+# # lapack documentation
+https://people.sc.fsu.edu/~jburkardt/c_src/clapack/clapack.html
+http://nicolas.limare.net/pro/notes/2014/10/31_cblas_clapack_lapacke/
+
