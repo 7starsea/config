@@ -1,3 +1,9 @@
+# # first run
+./bootstrap.sh
+
+# # on linux recommend specify build-dir
+mkdir build
+
 b2.exe --without-context --without-graph --without-graph_parallel --without-wave --without-mpi --without-test install
 
 

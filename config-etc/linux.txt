@@ -1,8 +1,8 @@
 
 sudo apt-get install vim,geany
-sudo apt-get install build-essential gcc g++ git screen tmux
+sudo apt-get install build-essential gcc g++ gfortran git screen tmux
 
-cmake
+# # install cmake openblas (with lapack) and boost and eigen
 
 
 # # How to mount a new drive
@@ -19,7 +19,7 @@ sudo locale-gen "en_US.UTF-8"
 # # Install lapack
 # # Install OpenBlas without using CMake (there is a testing problem)
 # # using CMake to install lapack with following commands
-cmake -DCMAKE_INSTALL_PREFIX=/home/share/Public/openblas -DCMAKE_BUILD_TYPE=Release ..
+cmake -DCMAKE_INSTALL_PREFIX=/home/share/Public/openblas -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON ..
 # cmake -DCMAKE_INSTALL_PREFIX=/home/share/Public/openblas -DCMAKE_BUILD_TYPE=Release ..
 
 cmake -DBLAS_LIBRARIES=/home/share/Public/OpenBlas/lib/libopenblas.so -DCMAKE_INSTALL_PREFIX=/home/share/Public/lapack -DCMAKE_BUILD_TYPE=Release -ULAPACKE -DLAPACKE=ON ..
