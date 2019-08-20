@@ -26,9 +26,10 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
 
-conda install -y cython openblas numpy pandas statsmodels scipy matplotlib h5py scikit-learn
+conda install -y cython openblas numpy pytables pandas statsmodels scipy matplotlib h5py scikit-learn
 python -m pip install dispy
 pip install psutil
+pip install scikit-build
 
 https://ray.readthedocs.io/en/latest/index.html
 ray
@@ -53,4 +54,3 @@ conda remove scikit-learn
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 
-pip install scikit-build
