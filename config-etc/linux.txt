@@ -28,3 +28,30 @@ cmake -DBLAS_LIBRARIES=/home/share/Public/OpenBlas/lib/libopenblas.so -DCMAKE_IN
 https://people.sc.fsu.edu/~jburkardt/c_src/clapack/clapack.html
 http://nicolas.limare.net/pro/notes/2014/10/31_cblas_clapack_lapacke/
 
+
+
+
+//// Returning to an Old Revision
+https://www.git-tower.com/learn/git/faq/restore-repo-to-previous-revision
+git reset --hard 0ad5a7a6  # discard all changes
+git reset --soft 0ad5a7a6  # marked all changes as local modifications
+git push origin :the_branch //删除远程 the_branch
+
+
+# # directory
+rm -rf $(find . -maxdepth 2 -type d -path *weight*)    
+# # regular file
+rm -rf $(find . -maxdepth 2 -type f -name *.log)
+
+
+
+function join_by { local IFS="$1"; shift; echo "$*"; }
+#https://stackoverflow.com/questions/1527049/how-can-i-join-elements-of-an-array-in-bash
+#function join_by { local IFS="$1"; shift; echo "$*"; }
+
+
+# # 端口远程转发
+ssh -N -R remote:2914:localhost:1914 aimin@remote
+ssh -N -R remote:2914:localhost:1914 user@remote
+# # window putty 配置 : source port: 2914 Destination:  localhost:1914 Remote
+

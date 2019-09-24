@@ -26,10 +26,20 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
 
-conda install -y cython openblas numpy pytables pandas statsmodels scipy matplotlib h5py scikit-learn
+conda install -y cython mkl numpy pytables pandas statsmodels scipy matplotlib h5py scikit-learn tqdm
+conda install mkl-devel tbb boost=1.67 eigen=3.3.7
+# # goto conda env lib dir and run command
+ln libtbb.so.2 libtbb.so
+
+
+# for installing latest version of openblas, tqdm
+conda install -c conda-forge openblas, tqdm
+
 python -m pip install dispy
-pip install psutil
-pip install scikit-build
+pip install psutil scikit-build SharedArray
+
+# # create new env
+conda create -n myenv python=3.4
 
 https://ray.readthedocs.io/en/latest/index.html
 ray
@@ -38,7 +48,7 @@ ray
 https://amoffat.github.io/sh/
 
 # # ipdb: Integration of IPython pdb
-# # scikit-image: 
+# # scikit-image, dask.array, dask.distributed
 
 # # upgrade
 conda update scikit-learn
