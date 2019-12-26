@@ -31,6 +31,12 @@ conda install mkl-devel tbb boost=1.67 eigen=3.3.7
 # # goto conda env lib dir and run command
 ln libtbb.so.2 libtbb.so
 
+# # install gym (https://github.com/openai/gym) and atari(https://github.com/openai/atari-py)
+pip install gym[atari]
+# # install tensorboard
+pip install tensorboard
+(usage: tensorboard --logdir=runs)
+
 
 # for installing latest version of openblas, tqdm
 conda install -c conda-forge openblas, tqdm
