@@ -42,7 +42,7 @@ pip install tensorboard
 conda install -c conda-forge openblas, tqdm
 
 python -m pip install dispy
-pip install psutil scikit-build SharedArray
+pip install psutil scikit-build SharedArray setproctitle
 
 # # create new env
 conda create -n myenv python=3.4
