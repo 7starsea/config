@@ -26,7 +26,9 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
 
-conda install -y cython mkl numpy pytables pandas statsmodels scipy matplotlib h5py scikit-learn tqdm
+conda install -y cython mkl numpy pytables pandas statsmodels scipy matplotlib h5py scikit-learn tqdm pybind11
+conda install boost=1.67 eigen=3.3.7
+
 conda install mkl-devel tbb boost=1.67 eigen=3.3.7
 # # goto conda env lib dir and run command
 ln libtbb.so.2 libtbb.so
@@ -42,7 +44,7 @@ pip install tensorboard
 conda install -c conda-forge openblas, tqdm
 
 python -m pip install dispy
-pip install psutil scikit-build SharedArray setproctitle
+pip install psutil scikit-build SharedArray setproctitle spdlog
 
 # # create new env
 conda create -n myenv python=3.4
