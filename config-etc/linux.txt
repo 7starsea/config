@@ -55,3 +55,23 @@ ssh -N -R remote:2914:localhost:1914 aimin@remote
 ssh -N -R remote:2914:localhost:1914 user@remote
 # # window putty 配置 : source port: 2914 Destination:  localhost:1914 Remote
 
+
+
+
+# # How to mount a new drive
+https://www.cnblogs.com/afrag/p/5972511.html
+
+# # How to find UUID of disk in Linux
+ls -lah /dev/disk/by-uuid/
+
+
+# # install nvidia driver for ubuntu/centos
+https://arstech.net/how-to-disable-nouveau-nvidia-driver-on-ubuntu-18-04/
+https://www.advancedclustering.com/act_kb/installing-nvidia-drivers-rhel-centos-7/
+# # install nVidia drivers error - "You appear to be running an X server" , solution
+sudo service lightdm stop
+
+
+
+# # calibrate beijing time using ntp
+sudo ntpdate ntp.ntsc.ac.cn
