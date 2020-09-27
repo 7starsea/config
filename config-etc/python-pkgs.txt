@@ -26,8 +26,8 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
 
-conda install -y cython mkl numpy pytables pandas statsmodels scipy matplotlib h5py scikit-learn tqdm pybind11 psutil setproctitle
-pip install scikit-build SharedArray spdlog
+conda install -y cython mkl numpy pytables pandas statsmodels scipy matplotlib h5py scikit-learn tqdm pybind11 psutil setproctitle termcolor
+pip install scikit-build SharedArray spdlog fire
 
 python -m pip install dispy
 conda install boost=1.67 eigen=3.3.7
